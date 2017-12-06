@@ -22,6 +22,7 @@ class MailController extends Controller
             ->setSubject('Message subject')
             ->setTextBody('Plain text content')
             ->setHtmlBody('<b>HTML content</b>');
+
         if ( $message->send() ) {
             echo 'success';
         } else {
