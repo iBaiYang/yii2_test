@@ -13,6 +13,9 @@ use common\widgets\Smtp;
  */
 class MailController extends Controller
 {
+    /**
+     * 邮件发送
+     */
     public function actionSend()
     {
         $message = Yii::$app->mailer->compose()
