@@ -242,7 +242,7 @@ class SiteController extends Controller
         $buffer = 1024;
         $file_count = 0;
 
-        // 向浏览器返回数据
+        // 向浏览器返回数 据
         while ( !feof($fp) && $file_count < $file_size )
         {
             $file_con = fread($fp, $buffer);
